@@ -15,5 +15,5 @@ class SimpleValue extends ValueObject<SimpleValueFailureEnum, String> {
     return SimpleValue.create(left(SimpleValueFailureEnum.Empty));
   }
 
-  SimpleValue.create(Either<SimpleValueFailureEnum, String> value) : super(value);
+  SimpleValue.create(super.value);
 }

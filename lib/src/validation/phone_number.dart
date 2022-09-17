@@ -20,5 +20,5 @@ class PhoneNumber extends ValueObject<PhoneNumberFailureEnum, String> {
     return PhoneNumber.create(left(PhoneNumberFailureEnum.Empty));
   }
 
-  PhoneNumber.create(Either<PhoneNumberFailureEnum, String> value) : super(value);
+  PhoneNumber.create(super.value);
 }

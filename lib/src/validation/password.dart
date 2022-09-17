@@ -42,5 +42,5 @@ class Password extends ValueObject<PasswordFailureEnum, String> {
     return Password.create(left(PasswordFailureEnum.Empty));
   }
 
-  Password.create(Either<PasswordFailureEnum, String> value) : super(value);
+  Password.create(super.value);
 }

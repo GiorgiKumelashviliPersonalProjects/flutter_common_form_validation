@@ -20,5 +20,5 @@ class VerificationCode extends ValueObject<VerificationCodeFailureEnum, String> 
     return VerificationCode.create(left(VerificationCodeFailureEnum.Empty));
   }
 
-  VerificationCode.create(Either<VerificationCodeFailureEnum, String> value) : super(value);
+  VerificationCode.create(super.value);
 }

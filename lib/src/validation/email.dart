@@ -20,5 +20,5 @@ class Email extends ValueObject<EmailFailureEnum, String> {
     return Email.create(left(EmailFailureEnum.Empty));
   }
 
-  Email.create(Either<EmailFailureEnum, String> value) : super(value);
+  Email.create(super.value);
 }

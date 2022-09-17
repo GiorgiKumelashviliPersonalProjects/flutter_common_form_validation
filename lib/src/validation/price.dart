@@ -21,5 +21,5 @@ class Price extends ValueObject<PriceFailureEnum, double> {
     return Price.create(left(PriceFailureEnum.Empty));
   }
 
-  Price.create(Either<PriceFailureEnum, double> value) : super(value);
+  Price.create(super.value);
 }

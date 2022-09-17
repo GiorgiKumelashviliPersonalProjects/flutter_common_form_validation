@@ -20,5 +20,5 @@ class Url extends ValueObject<UrlFailureEnum, String> {
     return Url.create(left(UrlFailureEnum.Empty));
   }
 
-  Url.create(Either<UrlFailureEnum, String> value) : super(value);
+  Url.create(super.value);
 }

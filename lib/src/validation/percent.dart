@@ -25,5 +25,5 @@ class Percent extends ValueObject<PercentFailureEnum, double> {
     return Percent.create(left(PercentFailureEnum.Empty));
   }
 
-  Percent.create(Either<PercentFailureEnum, double> value) : super(value);
+  Percent.create(super.value);
 }

@@ -3,25 +3,25 @@ import '../utils/either.dart';
 import '../utils/value_object.dart';
 
 class ConfirmPassword extends ValueObject<ConfirmPasswordFailureEnum, String> {
-  factory ConfirmPassword(String password, String repeatedPassword) {
-    if (repeatedPassword.isEmpty) {
+  factory ConfirmPassword(String password, String confirmPassword) {
+    if (confirmPassword.isEmpty) {
       return ConfirmPassword.create(
         left(ConfirmPasswordFailureEnum.Empty),
       );
     }
 
-    if (password != repeatedPassword) {
+    if (password != confirmPassword) {
       return ConfirmPassword.create(
         left(ConfirmPasswordFailureEnum.DoesNotMatch),
       );
     }
 
-    return ConfirmPassword.create(right(repeatedPassword));
+    return ConfirmPassword.create(right(confirmPassword));
   }
 
   factory ConfirmPassword.empty() {
     return ConfirmPassword.create(left(ConfirmPasswordFailureEnum.Empty));
   }
 
-  ConfirmPassword.create(Either<ConfirmPasswordFailureEnum, String> value) : super(value);
+  ConfirmPassword.create(super.value);
 }

@@ -20,5 +20,5 @@ class Name extends ValueObject<NameFailureEnum, String> {
     return Name.create(left(NameFailureEnum.Empty));
   }
 
-  const Name.create(Either<NameFailureEnum, String> value) : super(value);
+  const Name.create(super.value);
 }
