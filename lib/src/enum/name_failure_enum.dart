@@ -1,0 +1,4 @@
+enum NameFailureEnum {
+  Empty,
+  TooShort,
+}

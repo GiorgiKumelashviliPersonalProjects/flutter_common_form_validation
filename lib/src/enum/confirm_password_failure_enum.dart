@@ -1,0 +1,4 @@
+enum ConfirmPasswordFailureEnum {
+  Empty,
+  DoesNotMatch,
+}

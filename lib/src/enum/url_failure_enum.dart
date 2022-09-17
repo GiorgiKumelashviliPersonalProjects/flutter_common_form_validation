@@ -1,0 +1,4 @@
+enum UrlFailureEnum {
+  Empty,
+  Invalid,
+}

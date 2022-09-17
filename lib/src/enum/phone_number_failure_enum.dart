@@ -1,0 +1,4 @@
+enum PhoneNumberFailureEnum {
+  Empty,
+  Invalid,
+}

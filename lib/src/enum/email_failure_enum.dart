@@ -1,0 +1,4 @@
+enum EmailFailureEnum {
+  Empty,
+  Invalid,
+}
